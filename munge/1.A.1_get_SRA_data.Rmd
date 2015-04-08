@@ -1,0 +1,56 @@
+---
+title: "download_data"
+author: "Jinliang Yang"
+date: "April 8, 2015"
+output: html_document
+---
+
+Down load data for three oryza:
+
+```{r, eval=FALSE}
+cd ~/dbcenter/OryzaRNAseq/glumipatula/
+### Oryza glumipatula, leaf RNA-seq, PE, 101bp
+wget get ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1174772/SRR1174772.sra
+### Oryza glumipatula, panicle RNA-seq, PE, 101bp
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1174773/SRR1174773.sra
+### Oryza glumipatula, root RNA-seq, PE, 101bp
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1174777/SRR1174777.sra
+
+cd ~/dbcenter/OryzaRNAseq/minuta/
+### Oryza minuta, leaf RNA-seq, PE, 101bp
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1179197/SRR1179197.sra    
+### Oryza minuta, panicle RNA-seq, PE, 101bp
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1179198/SRR1179198.sra
+### Oryza minuta, root RNA-seq, PE, 101bp
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1179199/SRR1179199.sra
+
+cd ~/dbcenter/OryzaRNAseq/nivara/
+### Oryza nivara, leaf RNA-seq, PE, 101bp
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1171629/SRR1171629.sra    
+### Oryza nivara, panicle RNA-seq, PE, 101bp
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1171631/SRR1171631.sra
+### Oryza nivara, root RNA-seq, PE, 101bp
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1171630/SRR1171630.sra
+
+```
+
+```{r, eval=FLASE}
+source("lib/setUpslurm.R")
+```
+
+
+
+```{r, eval=FALSE}
+### dump the SRA into fastq
+fastq-dump --split-spot --split-3 -A glumipatula/SRR1174772.sra
+fastq-dump --split-spot --split-3 -A glumipatula/SRR1174777.sra
+fastq-dump --split-spot --split-3 -A glumipatula/SRR1174773.sra
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
