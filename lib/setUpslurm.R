@@ -3,7 +3,7 @@
 
 setUpslurm <- function(slurmsh="largedata/GenSel/CL_test.sh",
                        codesh="sh largedata/myscript.sh",
-                       wd=NULL, jobid="myjob"
+                       wd=NULL, jobid="myjob", email=FALSE
                        ){
     
     #message(sprintf("###>>> cp from Introgression, tailored for pvpDiallel"))  
@@ -36,7 +36,15 @@ setUpslurm <- function(slurmsh="largedata/GenSel/CL_test.sh",
         file=slurmsh, sep="\n", append=FALSE);
     
     #### attach some sh scripts
-    cat(codesh, file=slurmsh, sep="\n", append=TRUE) 
+    cat(codesh, file=slurmsh, sep="\n", append=TRUE)
+    
+    #### warning and message
+    if(email){
+        cat("",
+            paste("python /home/jolyang/bin/send_email.py -s", slurmsh),
+            file=slurmsh, sep="\n", append=TRUE);
+    }
+    
     
     message(paste("###>>> In this path: cd ", wd, sep=""), "\n",
             paste("###>>> [ note: --ntasks=INT, number of cup ]"),"\n",

@@ -36,6 +36,9 @@ wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117
 
 ```{r, eval=FLASE}
 source("lib/setUpslurm.R")
+setUpslurm(slurmsh="slurm-scripts/run_download.sh",
+           codesh="sh slurm-scripts/download.sh",
+           wd=NULL, jobid="download", email=TRUE)
 ```
 
 
