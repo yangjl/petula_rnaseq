@@ -5,7 +5,7 @@ date: "April 8, 2015"
 output: html_document
 ---
 
-Down load data for three oryza:
+### Down load data for Four oryza:
 
 ```{r, eval=FALSE}
 cd ~/dbcenter/OryzaRNAseq/glumipatula/
@@ -14,24 +14,38 @@ wget get ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SR
 ### Oryza glumipatula, panicle RNA-seq, PE, 101bp
 wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1174773/SRR1174773.sra
 ### Oryza glumipatula, root RNA-seq, PE, 101bp
-wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1174777/SRR1174777.sra
+#~/.aspera/connect/bin/ascp -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh -QT -l 100m anonftp@ftp-private.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1174777/SRR1174777.sra .
 
 cd ~/dbcenter/OryzaRNAseq/minuta/
 ### Oryza minuta, leaf RNA-seq, PE, 101bp
-wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1179197/SRR1179197.sra    
+~/.aspera/connect/bin/ascp -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh -QT -l 100m anonftp@ftp-private.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1179197/SRR1179197.sra .
+
 ### Oryza minuta, panicle RNA-seq, PE, 101bp
-wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1179198/SRR1179198.sra
+~/.aspera/connect/bin/ascp -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh -QT -l 100m anonftp@ftp-private.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1179198/SRR1179198.sra .
+ 
 ### Oryza minuta, root RNA-seq, PE, 101bp
-wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1179199/SRR1179199.sra
+~/.aspera/connect/bin/ascp -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh -QT -l 100m anonftp@ftp-private.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1179199/SRR1179199.sra .
 
 cd ~/dbcenter/OryzaRNAseq/nivara/
 ### Oryza nivara, leaf RNA-seq, PE, 101bp
-wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1171629/SRR1171629.sra    
+~/.aspera/connect/bin/ascp -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh -QT -l 100m anonftp@ftp-private.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1171629/SRR1171629.sra .
+ 
 ### Oryza nivara, panicle RNA-seq, PE, 101bp
-wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1171631/SRR1171631.sra
+~/.aspera/connect/bin/ascp -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh -QT -l 100m anonftp@ftp-private.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1171631/SRR1171631.sra .
+ 
 ### Oryza nivara, root RNA-seq, PE, 101bp
-wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1171630/SRR1171630.sra
+~/.aspera/connect/bin/ascp -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh -QT -l 100m anonftp@ftp-private.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1171630/SRR1171630.sra .
 
+cd ~/dbcenter/OryzaRNAseq/barthii/
+### Oryza barthii, leaf RNA-seq, PE, 121bp
+~/.aspera/connect/bin/ascp -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh -QT -l 100m anonftp@ftp-private.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1170742/SRR1170742.sra .
+ 
+### Oryza barthii, panicle RNA-seq, PE, 101bp
+~/.aspera/connect/bin/ascp -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh -QT -l 100m anonftp@ftp-private.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1170762/SRR1170762.sra .
+
+### Oryza barthii, root RNA-seq, PE, 121bp
+~/.aspera/connect/bin/ascp -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh -QT -l 100m anonftp@ftp-private.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1170744/SRR1170744.sra .
+    
 ```
 
 ```{r, eval=FLASE}
@@ -41,19 +55,37 @@ setUpslurm(slurmsh="slurm-scripts/run_download.sh",
            wd=NULL, jobid="download", email=TRUE)
 ```
 
-
+### Dump SRA to fastq
 
 ```{r, eval=FALSE}
 ### dump the SRA into fastq
-fastq-dump --split-spot --split-3 -A glumipatula/SRR1174772.sra
-fastq-dump --split-spot --split-3 -A glumipatula/SRR1174777.sra
-fastq-dump --split-spot --split-3 -A glumipatula/SRR1174773.sra
+cd ~/dbcenter/OryzaRNAseq/glumipatula/
+fastq-dump --split-spot --split-3 -A SRR1174772.sra
+fastq-dump --split-spot --split-3 -A SRR1174777.sra
+fastq-dump --split-spot --split-3 -A SRR1174773.sra
+
+cd ~/dbcenter/OryzaRNAseq/minuta/
+fastq-dump --split-spot --split-3 -A SRR1179197.sra
+fastq-dump --split-spot --split-3 -A SRR1179198.sra
+fastq-dump --split-spot --split-3 -A SRR1179199.sra
+
+cd ~/dbcenter/OryzaRNAseq/nivara/
+fastq-dump --split-spot --split-3 -A SRR1171629.sra
+fastq-dump --split-spot --split-3 -A SRR1171630.sra
+fastq-dump --split-spot --split-3 -A SRR1171631.sra
+
+cd ~/dbcenter/OryzaRNAseq/barthii/
+fastq-dump --split-spot --split-3 -A SRR1170742.sra
+fastq-dump --split-spot --split-3 -A SRR1170744.sra
+fastq-dump --split-spot --split-3 -A SRR1170762.sra
+
+    
 ```
 
-You can also embed plots, for example:
-
-```{r, echo=FALSE}
-plot(cars)
+```{r, eval=FLASE}
+source("lib/setUpslurm.R")
+setUpslurm(slurmsh="slurm-scripts/run_dump4.sh",
+           codesh="sh slurm-scripts/dump4.sh",
+           wd=NULL, jobid="dump4", email=TRUE)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
