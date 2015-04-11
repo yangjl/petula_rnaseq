@@ -3,14 +3,16 @@
 
 ### input
 fastqfile = "slurm-scripts/sample.txt"
+run_qc(miniq=25, minip =50, samplefile="slurm-scripts/sample_barthii.txt")
+
 
 ### output scripts
-#Note: the samplefile must named as *.txt
-run_qc <- function(miniq=25, minip =50, samplefile=""){
+#Note: the samplefile must named as *.csv
+run_qc <- function(miniq=25, minip =50, samplefile="slurm-scripts/sample_barthii.csv"){
     
     
     #shfile = "largedata/step1_qc.sh"
-    basefile <- gsub("\\.txt$", "", samplefile)
+    basefile <- gsub("\\.csv$", "", samplefile)
     shfile <- paste0(samplefile, "_qc.sh")
     slurmfile <- paste0(samplefile, "_qc_run.sh")
     ### int passes to fastq_quality_filer Minimum quality score to keep
@@ -20,7 +22,7 @@ run_qc <- function(miniq=25, minip =50, samplefile=""){
     
     ######################################################################
     source("lib/PE_qc.R")
-    PE_qc(fqfile = fastqfile, shfile = shfile, q = miniq, p = minip)
+    PE_qc(fqfile = samplefile, shfile = shfile, q = miniq, p = minip)
     
     source("lib/setUpslurm.R")
     setUpslurm(slurmsh=slurmfile, 

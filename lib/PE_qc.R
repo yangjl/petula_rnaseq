@@ -4,7 +4,7 @@
 PE_qc <- function(fqfile = "largedata/sample.txt", shfile = "largedata/step1_qc.sh",
                   q = 25, p =50){
   
-  fq <- read.table(fqfile, header=TRUE)
+  fq <- read.csv(fqfile, header=TRUE)
   
   cat(paste("#quality checking", Sys.time(), sep=" "),
       paste("module load FASTX-Toolkit/0.0.13.2-goolf-1.4.10"),
