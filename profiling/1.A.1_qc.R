@@ -3,7 +3,7 @@
 
 ### input
 fastqfile = "slurm-scripts/sample.txt"
-run_qc(miniq=25, minip =50, samplefile="slurm-scripts/sample_barthii.txt")
+run_qc(miniq=25, minip =50, samplefile="slurm-scripts/sample_barthii.csv")
 
 
 ### output scripts
@@ -13,8 +13,8 @@ run_qc <- function(miniq=25, minip =50, samplefile="slurm-scripts/sample_barthii
     
     #shfile = "largedata/step1_qc.sh"
     basefile <- gsub("\\.csv$", "", samplefile)
-    shfile <- paste0(samplefile, "_qc.sh")
-    slurmfile <- paste0(samplefile, "_qc_run.sh")
+    shfile <- paste0(basefile, "_qc.sh")
+    slurmfile <- paste0(basefile, "_qc_run.sh")
     ### int passes to fastq_quality_filer Minimum quality score to keep
     #q = 25
     ### Minimum percent of bases that must have [-q] quality

@@ -1,9 +1,10 @@
 # Jinliang Yang
 # updated: 1.17.2015
 
-PE_qc <- function(fqfile = "largedata/sample.txt", shfile = "largedata/step1_qc.sh",
+PE_qc <- function(fqfile = "largedata/sample.csv", shfile = "largedata/step1_qc.sh",
                   q = 25, p =50){
   
+  ### fqfile: *.csv
   fq <- read.csv(fqfile, header=TRUE)
   
   cat(paste("#quality checking", Sys.time(), sep=" "),
@@ -12,14 +13,16 @@ PE_qc <- function(fqfile = "largedata/sample.txt", shfile = "largedata/step1_qc.
       file=shfile, sep="\n")
   
   for(i in 1:nrow(fq)){
-    fq1 <- paste0("largedata/", fq$fq1[i])
+    #fq1 <- paste0("largedata/", fq$fq1[i])
+    fq1 <- fq$fq1[i]
     stat1 <- paste(fq1, "stat", sep=".")
     qcpng1 <- paste(fq1, "qc.png", sep=".")
     nudpng1 <- paste(fq1, "nud.png", sep=".")
     gz1 <- paste(fq1, "qc", sep=".")
     res1 <- paste(fq1, "res", sep=".")
     
-    fq2 <- paste0("largedata/", fq$fq2[i])
+    #fq2 <- paste0("largedata/", fq$fq2[i])
+    fq2 <- fq$fq2[i]
     stat2 <- paste(fq2, "stat", sep=".")
     qcpng2 <- paste(fq2, "qc.png", sep=".")
     nudpng2 <- paste(fq2, "nud.png", sep=".")
