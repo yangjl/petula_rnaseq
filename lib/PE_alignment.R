@@ -16,11 +16,11 @@ setup_PE_alignment <- function(
   for(i in 1:nrow(fq)){
     ###########
     fq1 <- fq$fq1[i]
-    qc1 <- paste0(fq1, ".qc")
+    #qc1 <- paste0(fq1, ".qc")
     fq2 <- fq$fq2[i]
-    qc2 <- paste0(fq2, ".qc")
+    #qc2 <- paste0(fq2, ".qc")
     
-    prefix <- gsub("_1\\.fastq\\.qc$", "", fq1)
+    prefix <- gsub("_1\\.fastq$", "", fq1)
     uniq <- paste(prefix, "concordant_uniq", sep=".")
     bam <- paste(prefix, "uniq.bam", sep=".")
     
@@ -34,7 +34,7 @@ setup_PE_alignment <- function(
         # -n: max number of paths to print
         
         paste("gsnap -D", DBdir,"-d", DBnm, "-i 2 -N 1 -w 10000 -A sam -t", cpu,
-              "-n 3 --quality-protocol=sanger --nofails --gunzip",
+              "-n 3 --quality-protocol=sanger --nofails",
               fq1, fq2, "--split-output", prefix, sep=" "),
         ### extract the unique (or reliable) aligned reads
         #http://sourceforge.net/apps/mediawiki/samtools/index.php?title=SAM_FAQ

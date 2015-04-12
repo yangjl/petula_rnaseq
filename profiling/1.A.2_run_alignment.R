@@ -1,5 +1,18 @@
 ### Jinliang yang
 ### 2.17.2015
+source("lib/PE_alignment.R")
+source("lib/setUpslurm.R")
+
+
+run_align(samplefil="slurm-scripts/sample_barthii.csv", cpu=8)
+run_align(samplefil="slurm-scripts/sample_glumipatula.csv", cpu=8)
+run_align(samplefil="slurm-scripts/sample_minuta.csv", cpu=8)
+###>>> RUN: sbatch -p bigmemh --ntasks 8 slurm-scripts/sample_minuta_align_run.sh
+run_align(samplefil="slurm-scripts/sample_nivara.csv", cpu=8)
+###>>> RUN: sbatch -p bigmemh --ntasks 8 slurm-scripts/sample_nivara_align_run.sh
+
+
+
 
 ### input
 run_align <- function(samplefile="", cpu=8){
@@ -12,13 +25,14 @@ run_align <- function(samplefile="", cpu=8){
     ### number of CPU to use for mapping
     
     ######################################################################
-    source("lib/PE_alignment.R")
+
     setup_PE_alignment(fqfile = samplefile, shfile = shfile,
-                       DBdir="largedata/OS_204_v7/", DBnm="Osative_204_v7", cpu=cpu)
+                       DBdir="/home/jolyang/dbcenter/OS_204_v7/", DBnm="Osative_204_v7", cpu=cpu)
     
-    source("lib/setUpslurm.R")
+    
     setUpslurm(slurmsh=slurmfile, wd=NULL, jobid= gsub(".*/", "", shfile),
-               codesh= paste("module load gmap/2014-05-15", paste("sh", shfile), sep="\n"))
+               codesh= paste("module load gmap/2014-05-15", paste("sh", shfile), sep="\n"),
+               email=TRUE)
     ###>>> In this path: cd /home/jolyang/Documents/Github/Demo
     ###>>> [ note: --ntasks=INT, number of cup ]
     ###>>> [ note: --mem=16000, 16G memory ]
