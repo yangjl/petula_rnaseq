@@ -3,8 +3,8 @@
 # setup alignment and collect alignment statistics
 
 setup_PE_alignment <- function(
-  fqfile = "largedata/sample.txt", shfile = "largedata/step2_align.sh", 
-  DBdir="", DBnm="Osative_204_v7", miss=8, cpu=8
+  fqfile = "largedata/sample.csv", shfile = "largedata/step2_align.sh", 
+  DBdir="", DBnm="Osative_204_v7", cpu=8
   ){
   
   cat(paste("# setup alignment", Sys.time(), sep=" "),
@@ -12,12 +12,12 @@ setup_PE_alignment <- function(
       "",
       file=shfile, sep="\n")
   
-  fq <- read.table(fqfile, header=TRUE)
+  fq <- read.csv(fqfile, header=TRUE)
   for(i in 1:nrow(fq)){
     ###########
-    fq1 <- paste0("largedata/", fq$fq1[i]) 
+    fq1 <- fq$fq1[i]
     #qc1 <- paste0(fq1, ".qc")
-    fq2 <- paste0("largedata/", fq$fq2[i]) 
+    fq2 <- fq$fq2[i]
     #qc2 <- paste0(fq2, ".qc")
     
     prefix <- gsub("_1\\.fastq$", "", fq1)
@@ -33,7 +33,7 @@ setup_PE_alignment <- function(
         # -t: number of CPU to use
         # -n: max number of paths to print
         
-        paste("gsnap -D", DBdir,"-d", DBnm, "-m", miss, "-i 2 -N 1 -w 10000 -A sam -t", cpu,
+        paste("gsnap -D", DBdir,"-d", DBnm, "-i 2 -N 1 -w 10000 -A sam -t", cpu,
               "-n 3 --quality-protocol=sanger --nofails",
               fq1, fq2, "--split-output", prefix, sep=" "),
         ### extract the unique (or reliable) aligned reads

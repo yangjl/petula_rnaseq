@@ -2,7 +2,7 @@
 ### Feb 20th, 2015
 
 ### input
-fastqfile = "slurm-scripts/sample.txt"
+
 run_qc(miniq=25, minip =50, samplefile="slurm-scripts/sample_barthii.csv")
 
 

@@ -14,7 +14,7 @@ wget get ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SR
 ### Oryza glumipatula, panicle RNA-seq, PE, 101bp
 wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1174773/SRR1174773.sra
 ### Oryza glumipatula, root RNA-seq, PE, 101bp
-#~/.aspera/connect/bin/ascp -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh -QT -l 100m anonftp@ftp-private.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1174777/SRR1174777.sra .
+~/.aspera/connect/bin/ascp -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh -QT -l 100m anonftp@ftp-private.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR117/SRR1174777/SRR1174777.sra .
 
 cd ~/dbcenter/OryzaRNAseq/minuta/
 ### Oryza minuta, leaf RNA-seq, PE, 101bp
