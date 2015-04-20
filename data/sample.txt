@@ -1,0 +1,7 @@
+fq1 fq2 rep tissue
+leaf/leaf.rep1_1.fastq leaf/leaf.rep1_2.fastq rep1 leaf
+leaf/leaf.rep2_1.fastq leaf/leaf.rep2_2.fastq rep2 leaf
+leaf/leaf.rep3_1.fastq leaf/leaf.rep3_2.fastq rep3 leaf
+root/root.rep1_1.fastq root/root.rep1_2.fastq rep1 root
+root/root.rep2_1.fastq root/root.rep2_2.fastq rep2 root
+root/root.rep3_1.fastq root/root.rep3_2.fastq rep3 root
