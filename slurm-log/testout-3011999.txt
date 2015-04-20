@@ -1,0 +1,19 @@
+Completed: 32800059K bytes transferred in 2807 seconds
+ (95723K bits/sec), in 1 file.
+Completed: 36179991K bytes transferred in 3088 seconds
+ (95956K bits/sec), in 1 file.
+Completed: 29749697K bytes transferred in 2529 seconds
+ (96330K bits/sec), in 1 file.
+Completed: 28507878K bytes transferred in 2420 seconds
+ (96479K bits/sec), in 1 file.
+Completed: 35340159K bytes transferred in 2994 seconds
+ (96694K bits/sec), in 1 file.
+Completed: 23793634K bytes transferred in 2047 seconds
+ (95185K bits/sec), in 1 file.
+Completed: 6430781K bytes transferred in 568 seconds
+ (92675K bits/sec), in 1 file.
+Completed: 33658542K bytes transferred in 2888 seconds
+ (95458K bits/sec), in 1 file.
+Completed: 6067646K bytes transferred in 518 seconds
+ (95788K bits/sec), in 1 file.
+successfully sent the mail
