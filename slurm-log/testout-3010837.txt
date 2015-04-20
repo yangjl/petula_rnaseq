@@ -1,0 +1,4 @@
+Completed: 20179063K bytes transferred in 613 seconds
+ (269368K bits/sec), in 1 file.
+
+Session Stop  (Error: User aborted session)

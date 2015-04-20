@@ -1,0 +1,1 @@
+slurmd[bigmem2]: error: *** JOB 3010837 CANCELLED AT 2015-04-09T16:37:09 ***

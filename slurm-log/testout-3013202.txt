@@ -1,0 +1,7 @@
+Read 40117224 spots for SRR1170742.sra
+Written 40117224 spots for SRR1170742.sra
+Read 37984356 spots for SRR1170744.sra
+Written 37984356 spots for SRR1170744.sra
+Read 243198702 spots for SRR1170762.sra
+Written 243198702 spots for SRR1170762.sra
+successfully sent the mail

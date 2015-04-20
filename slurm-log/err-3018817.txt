@@ -1,0 +1,25 @@
+Module gmap/2014-05-15 loaded 
+GSNAP version 2014-05-15 called with args: gsnap -D largedata/OS_204_v7/ -d Osative_204_v7 -i 2 -N 1 -w 10000 -A sam -t 8 -n 3 --quality-protocol=sanger --nofails --gunzip /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra_1.fastq.qc /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra_2.fastq.qc --split-output /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra
+Checking compiler assumptions for popcnt: 6B8B4567 clz=1 clz=0 popcount=17 
+Checking compiler assumptions for SSE2: 6B8B4567 327B23C6 xor=59F066A1
+Checking compiler assumptions for SSE4.1: 103 -58 max=103
+Novel splicing (-N) turned on => assume reads are RNA-Seq
+The novelend-splicedist 50000 is greater than the localsplicedist 10000.  Resetting novelend-splicedist to be 10000
+Paired-end accessions SRR1170742.sra.221 and SRR1170742.sra.8 do not match
+[main_samview] fail to open "/home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra.concordant_uniq" for reading.
+GSNAP version 2014-05-15 called with args: gsnap -D largedata/OS_204_v7/ -d Osative_204_v7 -i 2 -N 1 -w 10000 -A sam -t 8 -n 3 --quality-protocol=sanger --nofails --gunzip /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra_1.fastq.qc /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra_2.fastq.qc --split-output /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra
+Checking compiler assumptions for popcnt: 6B8B4567 clz=1 clz=0 popcount=17 
+Checking compiler assumptions for SSE2: 6B8B4567 327B23C6 xor=59F066A1
+Checking compiler assumptions for SSE4.1: 103 -58 max=103
+Novel splicing (-N) turned on => assume reads are RNA-Seq
+The novelend-splicedist 50000 is greater than the localsplicedist 10000.  Resetting novelend-splicedist to be 10000
+Paired-end accessions SRR1170744.sra.178 and SRR1170744.sra.77 do not match
+[main_samview] fail to open "/home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra.concordant_uniq" for reading.
+GSNAP version 2014-05-15 called with args: gsnap -D largedata/OS_204_v7/ -d Osative_204_v7 -i 2 -N 1 -w 10000 -A sam -t 8 -n 3 --quality-protocol=sanger --nofails --gunzip /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra_1.fastq.qc /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra_2.fastq.qc --split-output /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra
+Checking compiler assumptions for popcnt: 6B8B4567 clz=1 clz=0 popcount=17 
+Checking compiler assumptions for SSE2: 6B8B4567 327B23C6 xor=59F066A1
+Checking compiler assumptions for SSE4.1: 103 -58 max=103
+Novel splicing (-N) turned on => assume reads are RNA-Seq
+The novelend-splicedist 50000 is greater than the localsplicedist 10000.  Resetting novelend-splicedist to be 10000
+Cannot open gzipped file /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra_2.fastq.qc
+[main_samview] fail to open "/home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra.concordant_uniq" for reading.

@@ -1,0 +1,25 @@
+slurm-scripts/sample_barthii_qc.sh: 2: slurm-scripts/sample_barthii_qc.sh: module: not found
+fastx_quality_stats: failed to open input file 'largedata//home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra_1.fastq': No such file or directory
+fastx_quality_stats: failed to open input file 'largedata//home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra_2.fastq': No such file or directory
+Error: can't open input file ().
+Error: can't open input file ().
+Error: can't open input file ().
+Error: can't open input file ().
+slurm-scripts/sample_barthii_qc.sh: 10: slurm-scripts/sample_barthii_qc.sh: cannot create largedata//home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra_1.fastq.res: Directory nonexistent
+slurm-scripts/sample_barthii_qc.sh: 11: slurm-scripts/sample_barthii_qc.sh: cannot create largedata//home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra_2.fastq.res: Directory nonexistent
+fastx_quality_stats: failed to open input file 'largedata//home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra_1.fastq': No such file or directory
+fastx_quality_stats: failed to open input file 'largedata//home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra_2.fastq': No such file or directory
+Error: can't open input file ().
+Error: can't open input file ().
+Error: can't open input file ().
+Error: can't open input file ().
+slurm-scripts/sample_barthii_qc.sh: 19: slurm-scripts/sample_barthii_qc.sh: cannot create largedata//home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra_1.fastq.res: Directory nonexistent
+slurm-scripts/sample_barthii_qc.sh: 20: slurm-scripts/sample_barthii_qc.sh: cannot create largedata//home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra_2.fastq.res: Directory nonexistent
+fastx_quality_stats: failed to open input file 'largedata//home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra_1.fastq': No such file or directory
+fastx_quality_stats: failed to open input file 'largedata//home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra_2.fastq': No such file or directory
+Error: can't open input file ().
+Error: can't open input file ().
+Error: can't open input file ().
+Error: can't open input file ().
+slurm-scripts/sample_barthii_qc.sh: 28: slurm-scripts/sample_barthii_qc.sh: cannot create largedata//home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra_1.fastq.res: Directory nonexistent
+slurm-scripts/sample_barthii_qc.sh: 29: slurm-scripts/sample_barthii_qc.sh: cannot create largedata//home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra_2.fastq.res: Directory nonexistent
