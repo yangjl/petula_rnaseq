@@ -4,7 +4,9 @@
 ###################################################
 ReadCount <- function(featureDB = "largedata/ASM465v1.25_edited.sqlite",
                       bamfile = "largedata/sample.txt"){
-  library(GenomicFeatures)
+  
+   
+    library(GenomicFeatures)
   library(GenomicAlignments)
   
   #### load db
@@ -17,11 +19,15 @@ ReadCount <- function(featureDB = "largedata/ASM465v1.25_edited.sqlite",
   #[1] 39049
   ###############################################################
   
-  fq <- read.table(bamfile, header=FALSE)
+  fq <- read.table(bamfile, header=TRUE)
+  if(sum(names(bamfile) %in% "bamfile") == 1){
+      stop("bamfile should contain col.names with bamfile!")
+  }
+      
   countDF <- data.frame(row.names=names(eByg))
   #ldir <- "largedata"
   for(i in 1:nrow(fq)){
-    bam <- as.character(fq$V1[i])
+    bam <- as.character(fq$bamfile[i])
     message(sprintf("###>>> start counting for [ %s ]", bam))
     
     #bamfile <- paste(ldir, bamfile, sep="/")
