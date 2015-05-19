@@ -6,7 +6,7 @@ ReadCount <- function(featureDB = "largedata/ASM465v1.25_edited.sqlite",
                       bamfile = "largedata/sample.txt"){
   
    
-    library(GenomicFeatures)
+  library(GenomicFeatures)
   library(GenomicAlignments)
   
   #### load db
