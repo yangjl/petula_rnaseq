@@ -19,7 +19,6 @@ write.table(samples[4:6, ], "data/rice_sample2.txt", sep="\t", row.names=FALSE, 
 write.table(samples[7:9, ], "data/rice_sample3.txt", sep="\t", row.names=FALSE, quote=FALSE)
 write.table(samples[10:12, ], "data/rice_sample4.txt", sep="\t", row.names=FALSE, quote=FALSE)
 
-
 #############################
 #samtools view -h -o out.sam in.bam
 #samtools view -h leaf.rep1_1.fastq.concordant_uniq.bam -o leaf.rep1_1.fastq.concordant_uniq.sam
@@ -29,22 +28,22 @@ write.table(samples[10:12, ], "data/rice_sample4.txt", sep="\t", row.names=FALSE
 source("lib/readcount.R")
 rc1 <- ReadCount(bamfile = "data/rice_sample1.txt", 
                 featureDB = "data/Osativa_204_v7.0.sqlite")
-write.table(rc1, "data/output1.txt", sep="\t", row.names=FALSE, quote=FALSE )
+write.table(rc1, "data/output1.txt", sep="\t", row.names=TRUE, quote=FALSE )
 
 rc2 <- ReadCount(bamfile = "data/rice_sample2.txt", 
                  featureDB = "data/Osativa_204_v7.0.sqlite")
 
-write.table(rc2, "data/output2.txt", sep="\t", row.names=FALSE, quote=FALSE )
+write.table(rc2, "data/output2.txt", sep="\t", row.names=TRUE, quote=FALSE )
 
 rc3 <- ReadCount(bamfile = "data/rice_sample3.txt", 
                  featureDB = "data/Osativa_204_v7.0.sqlite")
 
-write.table(rc3, "data/output3.txt", sep="\t", row.names=FALSE, quote=FALSE )
+write.table(rc3, "data/output3.txt", sep="\t", row.names=TRUE, quote=FALSE )
 
 rc4 <- ReadCount(bamfile = "data/rice_sample4.txt", 
                  featureDB = "data/Osativa_204_v7.0.sqlite")
 
-write.table(rc4, "data/output4.txt", sep="\t", row.names=FALSE, quote=FALSE )
+write.table(rc4, "data/output4.txt", sep="\t", row.names=TRUE, quote=FALSE )
 
 
 #rpkm <- read.csv("largedata/rpkm.csv")

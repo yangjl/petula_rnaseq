@@ -4,27 +4,13 @@
 
 
 
-samples <- "largedata/sample.txt"
-design_model <- formula(~ rep + tissue)
-
 
 ################################################
 #Raw count data are expected here!
-library(DESeq2)
-
-rc <- read.csv("largedata/readcount.csv")
-nm <- names(rc)
-nm <- gsub("^leaf\\.", "", nm)
-nm <- gsub("^root\\.", "", nm)
-names(rc) <- nm
-
-
-targets <- read.table(samples, header=TRUE)
-targets$fq1 <- gsub(".*\\/", "", targets$fq1)
-
-##########################
-DESeq2_pipe <- function(rcdata=rc, design_table=tgs[c(7:12, 21:26),], 
+library(DESeq2, lib="~/bin/Rlib/")
+run_DESeq2 <- function(rcdata=rc, design_table=tgs[c(7:12, 21:26),], 
                         design_model= design_model){
+    # note: the results will be for the last variable in the design formul
   ########## WT and WT4C
   dds <- DESeqDataSetFromMatrix(as.matrix(rcdata), colData=design_table,
                                 design = design_model)
@@ -42,10 +28,24 @@ DESeq2_pipe <- function(rcdata=rc, design_table=tgs[c(7:12, 21:26),],
 
 
 ######## CBF and WT under nonstress
-res1 <- DESeq2_pipe(rcdata=as.matrix(rc), design_table= targets, design_model =design_model)
-#>>> DE genes: [ 1473 ], up: [840], down: [633]
-sig <- subset(res1, padj < 0.05 & abs(log2FoldChange)>1)
+s1 <- read.table("data/output1.txt", header=TRUE)
+s2 <- read.table("data/output2.txt", header=TRUE)
+s3 <- read.table("data/output3.txt", header=TRUE)
+s4 <- read.table("data/output4.txt", header=TRUE)
 
+rc <- cbind(s1, s2, s3, s4)
+nms <- names(rc)
+names(rc) <- gsub("X.home.jolyang.dbcenter.OryzaRNAseq.", "", nms)
+
+
+mysample <- read.table("data/rice_sample.txt", header=TRUE)
+mysample$glum[1:3] <- "yes"
+
+#########
+res1 <- run_DESeq2(rcdata=as.matrix(rc), design_table= mysample, design_model = formula(~ tissue + glum))
+#>>> DE genes: [ 1818 ], up: [903], down: [915]
+
+write.table(res1,  "data/Table_glum_DEG.csv", sep=",", quote=FALSE)
 
 
 
