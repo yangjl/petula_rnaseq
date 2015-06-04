@@ -36,7 +36,11 @@ s4 <- read.table("data/output4.txt", header=TRUE)
 rc <- cbind(s1, s2, s3, s4)
 nms <- names(rc)
 names(rc) <- gsub("X.home.jolyang.dbcenter.OryzaRNAseq.", "", nms)
-
+#nms <- names(rc0)
+nms <- gsub(".sra.*", "", nms)
+nms <- gsub(".*\\.", "", nms)
+names(rc) <- nms
+write.table(rc, "data/readcount.csv", sep=",", row.names=TRUE, quote=FALSE)
 
 mysample <- read.table("data/rice_sample.txt", header=TRUE)
 mysample$glum[1:3] <- "yes"
