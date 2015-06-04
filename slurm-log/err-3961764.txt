@@ -1,0 +1,180 @@
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 39049
+[index] number of k-mers: 52255763
+[index] number of equivalence classes: 67110
+[quant] running in paired-end mode
+[quant] will process pair 1: /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra_1.fastq
+                             /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra_2.fastq
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 40117224 reads, 35876050 reads pseudoaligned
+[quant] estimated average fragment length: 193.285
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 799 rounds
+
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 39049
+[index] number of k-mers: 52255763
+[index] number of equivalence classes: 67110
+[quant] running in paired-end mode
+[quant] will process pair 1: /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra_1.fastq
+                             /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra_2.fastq
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 37984356 reads, 30629634 reads pseudoaligned
+[quant] estimated average fragment length: 196.232
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 728 rounds
+
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 39049
+[index] number of k-mers: 52255763
+[index] number of equivalence classes: 67110
+[quant] running in paired-end mode
+[quant] will process pair 1: /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra_1.fastq
+                             /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra_2.fastq
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 243198702 reads, 216330846 reads pseudoaligned
+[quant] estimated average fragment length: 178.95
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 644 rounds
+
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 39049
+[index] number of k-mers: 52255763
+[index] number of equivalence classes: 67110
+[quant] running in paired-end mode
+[quant] will process pair 1: /home/jolyang/dbcenter/OryzaRNAseq/glumipatula/SRR1174772.sra_1.fastq
+                             /home/jolyang/dbcenter/OryzaRNAseq/glumipatula/SRR1174772.sra_2.fastq
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 233523907 reads, 201919089 reads pseudoaligned
+[quant] estimated average fragment length: 187.786
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 599 rounds
+
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 39049
+[index] number of k-mers: 52255763
+[index] number of equivalence classes: 67110
+[quant] running in paired-end mode
+[quant] will process pair 1: /home/jolyang/dbcenter/OryzaRNAseq/glumipatula/SRR1174773.sra_1.fastq
+                             /home/jolyang/dbcenter/OryzaRNAseq/glumipatula/SRR1174773.sra_2.fastq
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 215334677 reads, 188370957 reads pseudoaligned
+[quant] estimated average fragment length: 180.082
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 768 rounds
+
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 39049
+[index] number of k-mers: 52255763
+[index] number of equivalence classes: 67110
+[quant] running in paired-end mode
+[quant] will process pair 1: /home/jolyang/dbcenter/OryzaRNAseq/glumipatula/SRR1174777.sra_1.fastq
+                             /home/jolyang/dbcenter/OryzaRNAseq/glumipatula/SRR1174777.sra_2.fastq
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 166279691 reads, 32750317 reads pseudoaligned
+[quant] estimated average fragment length: 191.037
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 512 rounds
+
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 39049
+[index] number of k-mers: 52255763
+[index] number of equivalence classes: 67110
+[quant] running in paired-end mode
+[quant] will process pair 1: /home/jolyang/dbcenter/OryzaRNAseq/minuta/SRR1179197.sra_1.fastq
+                             /home/jolyang/dbcenter/OryzaRNAseq/minuta/SRR1179197.sra_2.fastq
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 236403184 reads, 165547359 reads pseudoaligned
+[quant] estimated average fragment length: 163.672
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 753 rounds
+
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 39049
+[index] number of k-mers: 52255763
+[index] number of equivalence classes: 67110
+[quant] running in paired-end mode
+[quant] will process pair 1: /home/jolyang/dbcenter/OryzaRNAseq/minuta/SRR1179198.sra_1.fastq
+                             /home/jolyang/dbcenter/OryzaRNAseq/minuta/SRR1179198.sra_2.fastq
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 251887234 reads, 190212572 reads pseudoaligned
+[quant] estimated average fragment length: 182.959
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 819 rounds
+
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 39049
+[index] number of k-mers: 52255763
+[index] number of equivalence classes: 67110
+[quant] running in paired-end mode
+[quant] will process pair 1: /home/jolyang/dbcenter/OryzaRNAseq/minuta/SRR1179199.sra_1.fastq
+                             /home/jolyang/dbcenter/OryzaRNAseq/minuta/SRR1179199.sra_2.fastq
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 209850273 reads, 57696402 reads pseudoaligned
+[quant] estimated average fragment length: 206.215
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1157 rounds
+
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 39049
+[index] number of k-mers: 52255763
+[index] number of equivalence classes: 67110
+[quant] running in paired-end mode
+[quant] will process pair 1: /home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171629.sra_1.fastq
+                             /home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171629.sra_2.fastq
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 200687847 reads, 178980869 reads pseudoaligned
+[quant] estimated average fragment length: 195.905
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 595 rounds
+
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 39049
+[index] number of k-mers: 52255763
+[index] number of equivalence classes: 67110
+[quant] running in paired-end mode
+[quant] will process pair 1: /home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171630.sra_1.fastq
+                             /home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171630.sra_2.fastq
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 168591555 reads, 131240121 reads pseudoaligned
+[quant] estimated average fragment length: 188.687
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 553 rounds
+
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 39049
+[index] number of k-mers: 52255763
+[index] number of equivalence classes: 67110
+[quant] running in paired-end mode
+[quant] will process pair 1: /home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171631.sra_1.fastq
+                             /home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171631.sra_2.fastq
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 250209664 reads, 219720790 reads pseudoaligned
+[quant] estimated average fragment length: 176.923
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 670 rounds
+

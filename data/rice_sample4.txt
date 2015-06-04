@@ -1,0 +1,4 @@
+fq1	fq2	tissue	oryza	glum	bamfile
+/home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171629.sra_1.fastq	/home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171629.sra_2.fastq	leaf	nivara	no	/home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171629.sra.uniq.bam
+/home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171630.sra_1.fastq	/home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171630.sra_2.fastq	root	nivara	no	/home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171630.sra.uniq.bam
+/home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171631.sra_1.fastq	/home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171631.sra_2.fastq	panicle	nivara	no	/home/jolyang/dbcenter/OryzaRNAseq/nivara/SRR1171631.sra.uniq.bam

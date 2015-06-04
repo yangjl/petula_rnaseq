@@ -1,0 +1,4 @@
+fq1	fq2	tissue	oryza	glum	bamfile
+/home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra_1.fastq	/home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra_2.fastq	leaf	barthii	no	/home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170742.sra.uniq.bam
+/home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra_1.fastq	/home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra_2.fastq	root	barthii	no	/home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra.uniq.bam
+/home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra_1.fastq	/home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra_2.fastq	panicle	barthii	no	/home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170762.sra.uniq.bam
