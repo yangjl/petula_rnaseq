@@ -1,0 +1,8 @@
+{
+	"n_targets": 39049,
+	"n_bootstraps": 0,
+	"kallisto_version": "0.42.1",
+	"index_version": 9,
+	"start_time": "Tue Jun  2 14:18:08 2015",
+	"call": "kallisto quant -i /home/jolyang/dbcenter/OS_204_v7/Osativa_204_v7_1transcript -o largedata/kallisto/SRR1170744 --plaintext /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra_1.fastq /home/jolyang/dbcenter/OryzaRNAseq/barthii/SRR1170744.sra_2.fastq"
+}
